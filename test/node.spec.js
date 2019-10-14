@@ -106,8 +106,8 @@ describe('Node', () => {
 			sinon.spy(parent, 'removeChild');
 
 			child.remove();
-
 			expect(parent.removeChild).to.have.been.calledOnce;
+
 			expect(parent.removeChild).to.have.been.calledWith(child);
 		});
 	});
